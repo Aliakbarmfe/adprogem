@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333333;
+  padding: 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 25px auto;
+  background: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.admin-header h1 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+#refreshBtn {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+#refreshBtn:hover {
+  background-color: #2980b9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.table-responsive {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+th, td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eef2f5;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #555555;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.error-msg {
+  color: #e74c3c;
+}
+
+.username-tag {
+  background-color: #e8f4fd;
+  color: #2980b9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
