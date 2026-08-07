@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل مدیریت - گردونه بازی محمد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="admin-header">
+    <h1>پنل مدیریت جوایز گردونه</h1>
+    <button id="refreshBtn">بروزرسانی لیست 🔄</button>
+  </header>
+
+  <main class="container">
+    <div id="loading" class="status-msg">در حال دریافت اطلاعات...</div>
+    <div id="error" class="status-msg error-msg" style="display: none;"></div>
+
+    <div class="table-responsive">
+      <table id="submissionsTable" style="display: none;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>نام کاربری ۱</th>
+            <th>نام کاربری ۲</th>
+            <th>نام کاربری ۳</th>
+            <th>تاریخ و ساعت (به وقت ایران)</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- داده‌ها به صورت دینامیک جایگذاری می‌شوند -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
